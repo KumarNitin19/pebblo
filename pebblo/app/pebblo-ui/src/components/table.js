@@ -55,7 +55,7 @@ function Thead(props) {
                 !isSorting || col?.field === ACTIONS
                   ? col.label
                   : /*html*/ `<div class="flex gap-1 items-center ${TEXT__ALIGN}">
-              <img src="${MEDIA_URL}static/sort-icon.png" alt="Sort Icon" height="10" />
+              <img src="${MEDIA_URL}/sort-icon.png" alt="Sort Icon" height="10" />
               <div>${col.label}</div>
               </div>`
               }

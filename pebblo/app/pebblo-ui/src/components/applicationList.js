@@ -85,7 +85,7 @@ export function ApplicationsList(props) {
           <div class="search" title="Search">
             <input type="text" id="search_field" name="search" autocomplete="off" />
             <img
-              src="${MEDIA_URL}/static/search-icon.png"
+              src="${MEDIA_URL}/search-icon.png"
               alt="Search Icon" />
           </div>
        ${
@@ -93,7 +93,7 @@ export function ApplicationsList(props) {
            ? /*html*/ `<div class="divider mt-2 mb-2 ml-4 mr-1"></div>
           ${Button({
             btnText: "Download Reports",
-            startIcon: "/static/download-icon.png",
+            startIcon: "/download-icon.png",
           })}`
            : ""
        }

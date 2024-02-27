@@ -32,7 +32,7 @@ const Dialog = (props) => {
             id: `${dialogId}_close_modal`,
             children: `
               <img
-                src="${MEDIA_URL}/static/close.png"
+                src="${MEDIA_URL}/close.png"
                 alt="Close icon"
                 height="14"
                 width="14"

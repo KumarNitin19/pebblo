@@ -35,7 +35,7 @@ function AccordionSummary(props) {
   return /*html*/ ` 
       <button title="Accordion-summary" type="button" class="accordion-summary flex gap-1 items-center" data-value="${id}">
         <div>${children}</div>
-        <img id="arrow_icon" src="${MEDIA_URL}/static/${icon}" alt="Arrow icon"/>
+        <img id="arrow_icon" src="${MEDIA_URL}/${icon}" alt="Arrow icon"/>
       </button>
     `;
 }

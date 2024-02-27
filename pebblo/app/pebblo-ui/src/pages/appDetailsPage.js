@@ -50,7 +50,7 @@ export function AppDetailsPage() {
       <div class="flex justify-between">
         <div class="flex gap-3">
            <div class="bg-surface-10 pl-2 pr-2 pt-4 pb-4 rounded-lg">
-             <img src="${MEDIA_URL}/static/langchain-icon.png" alt="App icon" />
+             <img src="${MEDIA_URL}/langchain-icon.png" alt="App icon" />
            </div>
            <div class="flex flex-col gap-1 inter surface-10">
              <div class="font-24">${APP_DATA?.name}</div>
@@ -64,14 +64,14 @@ export function AppDetailsPage() {
           ${Button({
             variant: "text",
             btnText: "Download Report",
-            startIcon: "/static/download-icon.png",
+            startIcon: "/download-icon.png",
             id: "download_report_btn",
           })}
           <div class="divider mt-2 mb-2"></div>
           ${Button({
             variant: "text",
             btnText: "Load History",
-            startIcon: "/static/pending-icon.png",
+            startIcon: "/pending-icon.png",
             id: "load_history_dialog_btn",
           })}
         </div>

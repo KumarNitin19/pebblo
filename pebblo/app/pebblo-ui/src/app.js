@@ -13,7 +13,7 @@ export function App() {
       ? Button({
           variant: "text",
           btnText: "Back",
-          startIcon: "/static/left-arrow.png",
+          startIcon: "/left-arrow.png",
           href: DASHBOARD_ROUTE,
           style: "color:white;",
         })

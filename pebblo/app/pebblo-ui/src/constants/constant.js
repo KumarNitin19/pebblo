@@ -7,6 +7,8 @@ export const MEDIA_URL = document.scripts[0].getAttribute("staticURL");
 export const APP_DATA = JSON.parse(document.scripts[0].getAttribute("appData"));
 export const PORT = window.location.port;
 
+console.log(MEDIA_URL);
+
 export const MONTHS = [
   "Jan",
   "Feb",
@@ -158,7 +160,7 @@ export const TABLE_DATA_FOR_APPLICATIONS = [
     render: (item) =>
       Tooltip({
         children: /*html*/ `<div class="flex gap-4 justify-end">
-      <img id="${item?.name}" class="download-icon" class="cursor-pointer" src="${MEDIA_URL}/static/download-icon.png" alt="Download Icon" />
+      <img id="${item?.name}" class="download-icon" class="cursor-pointer" src="${MEDIA_URL}/download-icon.png" alt="Download Icon" />
     </div>`,
         title: "Download Icon",
         variant: "right",
@@ -166,9 +168,9 @@ export const TABLE_DATA_FOR_APPLICATIONS = [
     align: "end",
     //   render: /*html*/ `
     //   <div class="flex gap-4 justify-end">
-    //     <img id="download_icon" class="cursor-pointer" src="${MEDIA_URL}/static/download-icon.png" alt="Download Icon" />
+    //     <img id="download_icon" class="cursor-pointer" src="${MEDIA_URL}/download-icon.png" alt="Download Icon" />
     //     <div class="divider"></div>
-    //     <img id="load_history_icon" class="cursor-pointer" src="${MEDIA_URL}/static/pending-icon.png" alt="Download Icon" />
+    //     <img id="load_history_icon" class="cursor-pointer" src="${MEDIA_URL}/pending-icon.png" alt="Download Icon" />
     //   </div>
     // `
   },

@@ -44,8 +44,13 @@ class Service:
     async def create_main_api_server(self):
         self.app.mount(
             path="/static",
-            app=NoCacheStaticFiles(directory=Path(__file__).parent.parent.absolute() / "pebblo-ui"),
-            name="static",
+            app=StaticFiles(directory=Path(__file__).parent.parent.absolute() / "pebblo-ui/static"),
+            name="_static",
+        )
+        self.app.mount(
+            path="/src",
+            app=StaticFiles(directory=Path(__file__).parent.parent.absolute() / "pebblo-ui/src"),
+            name="_js",
         )
 
         # Add config Details to Uvicorn
